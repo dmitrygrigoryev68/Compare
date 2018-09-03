@@ -9,6 +9,7 @@ public class Compare {
         for (String s:strings) {
             System.out.println(s);
         }
+
         Arrays.sort(strings);
         System.out.println("\nAfter:  \n");
 
@@ -21,7 +22,7 @@ public class Compare {
                     new MyNumber(5, "bbb"),
                     new MyNumber(1,"ccc")};
 
-        Arrays.sort(numbers);
+        Arrays.sort(numbers, new MyNumberComparator());
         for(MyNumber number:numbers){
             System.out.println(number);
         }
